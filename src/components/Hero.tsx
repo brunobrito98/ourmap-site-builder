@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-events.jpg";
+import Logo from "@/components/Logo";
 
 const Hero = () => {
   return (
@@ -18,6 +19,11 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
+          {/* Logo */}
+          <div className="flex justify-center">
+            <Logo size="lg" />
+          </div>
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
             <Sparkles className="w-4 h-4 text-primary" />
@@ -48,7 +54,6 @@ const Hero = () => {
               className="text-lg px-8 py-6 h-auto"
               onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
             >
-              <MapPin className="w-5 h-5" />
               Abrir App
             </Button>
             <Button 

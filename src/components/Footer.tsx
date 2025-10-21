@@ -1,4 +1,5 @@
-import { MapPin, Instagram, Twitter, Facebook, Mail } from "lucide-react";
+import { Instagram, Twitter, Facebook, Mail } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,12 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold text-foreground">OurMap</span>
-            </div>
+            <Logo size="sm" />
             <p className="text-muted-foreground text-sm">
               Transformando sua cidade em um mapa de oportunidades e experiências inesquecíveis.
             </p>
