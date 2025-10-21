@@ -159,12 +159,7 @@ const FeaturesPage = () => {
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <a href="/" className="flex items-center gap-3">
-              <Logo size="sm" showText={false} />
-              <span className="font-pacifico text-2xl bg-clip-text text-transparent" style={{backgroundImage: 'var(--gradient-orange-purple)'}}>
-                OurMap
-              </span>
-            </a>
+            <Logo size="sm" showText={true} />
             <Button 
               variant="hero"
               onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
