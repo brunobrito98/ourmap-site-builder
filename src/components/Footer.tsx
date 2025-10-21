@@ -7,13 +7,10 @@ const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
-          <div className="space-y-4">
+          <div className="flex items-center justify-center md:justify-start">
             <Logo size="sm" />
-            <p className="text-muted-foreground text-sm">
-              Transformando sua cidade em um mapa de oportunidades e experiências inesquecíveis.
-            </p>
           </div>
 
           {/* Product */}
@@ -33,28 +30,6 @@ const Footer = () => {
               <li>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                   Preços
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Empresa</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Sobre Nós
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Carreiras
                 </a>
               </li>
             </ul>
@@ -98,9 +73,14 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">
-            © {currentYear} OurMap. Todos os direitos reservados.
-          </p>
+          <div className="text-center md:text-left">
+            <p className="text-muted-foreground text-sm">
+              © {currentYear} OurMap. Todos os direitos reservados.
+            </p>
+            <p className="text-muted-foreground text-sm mt-1">
+              suporte@ourmap.com.br
+            </p>
+          </div>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
               Privacidade
