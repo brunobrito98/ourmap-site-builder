@@ -34,7 +34,7 @@ const Logo = ({ className, showText = false, size = "md" }: LogoProps) => {
           src={logoImage} 
           alt="OurMap Logo" 
           className={cn(
-            "object-cover rounded-3xl shadow-lg group-hover:shadow-xl transition-shadow duration-300",
+            "object-cover rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow duration-300",
             currentSize.container
           )}
         />
