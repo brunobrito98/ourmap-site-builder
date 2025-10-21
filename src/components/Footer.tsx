@@ -10,9 +10,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="flex items-center justify-center md:justify-start">
-            <div className="scale-110">
-              <Logo size="sm" />
-            </div>
+            <span 
+              className="text-4xl font-bold bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent pb-1"
+              style={{ fontFamily: "'Pacifico', cursive", lineHeight: "1.5" }}
+            >
+              OurMap
+            </span>
           </div>
 
           {/* Product */}
