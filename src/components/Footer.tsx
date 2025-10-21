@@ -33,8 +33,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Preços
+                <a href="/manuais" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Manuais
                 </a>
               </li>
             </ul>
