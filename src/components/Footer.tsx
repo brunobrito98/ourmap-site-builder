@@ -1,0 +1,125 @@
+import { MapPin, Instagram, Twitter, Facebook, Mail } from "lucide-react";
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-card border-t border-border">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Brand */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center">
+                <MapPin className="w-6 h-6 text-white" />
+              </div>
+              <span className="text-2xl font-bold text-foreground">OurMap</span>
+            </div>
+            <p className="text-muted-foreground text-sm">
+              Transformando sua cidade em um mapa de oportunidades e experiências inesquecíveis.
+            </p>
+          </div>
+
+          {/* Product */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground">Produto</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="#features" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Funcionalidades
+                </a>
+              </li>
+              <li>
+                <a href="https://app.ourmap.com.br" className="text-muted-foreground hover:text-primary transition-colors text-sm" target="_blank" rel="noopener noreferrer">
+                  Baixar App
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Preços
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground">Empresa</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Sobre Nós
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Carreiras
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Connect */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground">Conecte-se</h3>
+            <div className="flex gap-3">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
+                aria-label="Twitter"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
+                aria-label="Email"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-muted-foreground text-sm">
+            © {currentYear} OurMap. Todos os direitos reservados.
+          </p>
+          <div className="flex gap-6">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              Privacidade
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              Termos
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              Cookies
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
