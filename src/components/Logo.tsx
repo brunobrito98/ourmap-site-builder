@@ -41,14 +41,12 @@ const Logo = ({ className, showText = true, size = "md" }: LogoProps) => {
       </div>
       {showText && (
         <span 
-          className={cn(
-            "font-bold bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent pb-1",
-            currentSize.text
-          )}
+          className={cn("font-bold pb-1", currentSize.text)}
           style={{ fontFamily: "'Pacifico', cursive", lineHeight: "1.5" }}
           data-testid="text-logo"
         >
-          OurMap
+          <span className="text-[#EC6047]">Our</span>
+          <span className="text-[#E84D9D]">Map</span>
         </span>
       )}
     </div>
