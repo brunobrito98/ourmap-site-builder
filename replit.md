@@ -6,6 +6,9 @@ OurMap is a location-based event discovery and social networking platform that h
 
 ## Recent Changes (October 2025)
 
+- **Brand Color Update**: Changed primary color scheme from pink/red to vibrant orange (HSL: 20, 90%, 55%) to match new logo design
+- **Logo Update**: Replaced logo with new orange branded icon across all pages (Hero, Footer, FeaturesPage)
+- **Theme Consistency**: Updated all CSS variables, gradients, shadows, and hardcoded colors to orange palette for both light and dark modes
 - **Migration from Lovable to Replit**: Successfully migrated the project from Lovable to Replit environment
 - **Architecture Decision**: Maintained frontend-only structure using Vite dev server (no backend) as recommended by architect
 - **Development Server**: Configured to run on port 5000 with host 0.0.0.0 for Replit compatibility
@@ -31,7 +34,8 @@ Preferred communication style: Simple, everyday language.
 - **CVA (class-variance-authority)** for variant-based component styling
 
 **Design System**
-- Custom color scheme centered around a vibrant pink/red primary color (HSL: 350, 89%, 60%)
+- Custom color scheme centered around a vibrant orange primary color (HSL: 20, 90%, 55%)
+- Secondary accent color in complementary orange (HSL: 25, 88%, 58%)
 - Pacifico font for branding/logo elements
 - Comprehensive design tokens defined in CSS variables (colors, gradients, shadows)
 - Mobile-first responsive design approach
@@ -60,7 +64,7 @@ Preferred communication style: Simple, everyday language.
 - `Footer` - Site footer with navigation and social links
 
 **Shared Components**
-- `Logo` - Branded logo component with MapPin, PartyPopper, and Calendar icons
+- `Logo` - Branded orange logo component with rounded corners and hover effects
 - Complete shadcn/ui component library (40+ components)
 
 ### Styling Architecture
