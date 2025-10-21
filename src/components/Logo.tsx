@@ -25,7 +25,7 @@ const Logo = ({ className, showText = true, size = "md" }: LogoProps) => {
 
   return (
     <div 
-      className={cn("inline-flex items-center gap-3 cursor-pointer group", className)}
+      className={cn("inline-flex flex-col items-center gap-2 cursor-pointer group", className)}
       onClick={handleClick}
       data-testid="logo"
     >
