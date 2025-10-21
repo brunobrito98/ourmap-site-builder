@@ -161,7 +161,7 @@ const FeaturesPage = () => {
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center gap-3">
               <Logo size="sm" showText={false} />
-              <span className="font-pacifico text-2xl bg-gradient-to-r from-[#F57C28] via-[#E86B1F] to-[#DC5F16] bg-clip-text text-transparent">
+              <span className="font-pacifico text-2xl bg-clip-text text-transparent" style={{backgroundImage: 'var(--gradient-orange-purple)'}}>
                 OurMap
               </span>
             </a>
