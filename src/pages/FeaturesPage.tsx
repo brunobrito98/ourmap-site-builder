@@ -185,7 +185,7 @@ const FeaturesPage = () => {
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground">
               Tudo Que Você Precisa Para
-              <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="block mt-2 bg-clip-text text-transparent" style={{backgroundImage: 'var(--gradient-hero)'}}>
                 Eventos Incríveis
               </span>
             </h1>
@@ -217,8 +217,8 @@ const FeaturesPage = () => {
                 data-testid={`card-participant-feature-${index}`}
               >
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <feature.icon className="w-6 h-6 text-primary" />
+                  <div className={`w-12 h-12 rounded-lg ${index === 3 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5' : 'bg-gradient-to-br from-primary/20 to-primary/5'} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <feature.icon className={`w-6 h-6 ${index === 3 ? 'text-[hsl(var(--pink))]' : 'text-primary'}`} />
                   </div>
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>
@@ -253,8 +253,8 @@ const FeaturesPage = () => {
                 data-testid={`card-organizer-feature-${index}`}
               >
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <feature.icon className="w-6 h-6 text-accent" />
+                  <div className={`w-12 h-12 rounded-lg ${index === 2 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5' : 'bg-gradient-to-br from-accent/20 to-accent/5'} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <feature.icon className={`w-6 h-6 ${index === 2 ? 'text-[hsl(var(--pink))]' : 'text-accent'}`} />
                   </div>
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>
@@ -289,8 +289,8 @@ const FeaturesPage = () => {
                 data-testid={`card-social-feature-${index}`}
               >
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <feature.icon className="w-6 h-6 text-primary" />
+                  <div className={`w-12 h-12 rounded-lg ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5' : 'bg-gradient-to-br from-primary/20 to-primary/5'} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <feature.icon className={`w-6 h-6 ${index === 1 ? 'text-[hsl(var(--pink))]' : 'text-primary'}`} />
                   </div>
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>
@@ -325,8 +325,8 @@ const FeaturesPage = () => {
                 data-testid={`card-tech-feature-${index}`}
               >
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500/20 to-green-500/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <feature.icon className="w-6 h-6 text-green-600" />
+                  <div className={`w-12 h-12 rounded-lg ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5' : index === 4 ? 'bg-gradient-to-br from-[hsl(var(--purple))]/20 to-[hsl(var(--purple))]/5' : 'bg-gradient-to-br from-green-500/20 to-green-500/5'} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <feature.icon className={`w-6 h-6 ${index === 1 ? 'text-[hsl(var(--pink))]' : index === 4 ? 'text-[hsl(var(--purple))]' : 'text-green-600'}`} />
                   </div>
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>
@@ -345,7 +345,7 @@ const FeaturesPage = () => {
       <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="relative bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{background: 'var(--gradient-hero)'}}>
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
