@@ -60,7 +60,7 @@ const Logo = ({ className, showText = true, size = "md" }: LogoProps) => {
       {showText && (
         <span 
           className={cn(
-            "font-pacifico text-primary transition-all duration-300 group-hover:scale-105",
+            "font-pacifico bg-gradient-to-r from-[#E4405F] via-[#D91E52] to-[#C71F5C] bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105",
             currentSize.text
           )}
         >
