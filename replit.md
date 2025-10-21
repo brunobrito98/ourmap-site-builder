@@ -6,6 +6,17 @@ OurMap is a location-based event discovery and social networking platform that h
 
 ## Recent Changes (October 2025)
 
+### Latest Update (Current Session)
+- **Purple Accent Color**: Added purple (HSL: 280, 70%, 60%) as a third accent color alongside orange and pink
+- **Orange-Purple Gradient**: Created new gradient (`--gradient-orange-purple`) for "OurMap" branding text
+- **Color Distribution in Features Page**: 
+  - Strategically distributed pink accents across Participants (index 3), Organizers (index 2), and Social (index 1) sections
+  - Added purple accent in Tech section (index 4) for additional variety
+  - Maintained green elements in Tech section for harmonious multi-color palette
+- **Hero Title Gradient**: Updated to use orange-pink gradient for "Eventos Incríveis"
+- **CTA Background**: Applied orange-pink gradient to final call-to-action section
+
+### Previous Updates
 - **Brand Color Update**: Changed primary color scheme from pink/red to vibrant orange (HSL: 20, 90%, 55%) to match new logo design
 - **Logo Update**: Replaced logo with new orange branded icon across all pages (Hero, Footer, FeaturesPage)
 - **Theme Consistency**: Updated all CSS variables, gradients, shadows, and hardcoded colors to orange palette for both light and dark modes
