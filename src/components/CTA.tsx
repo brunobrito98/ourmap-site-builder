@@ -6,7 +6,7 @@ const CTA = () => {
     <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-[var(--shadow-elegant)]">
+          <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-[var(--shadow-elegant)]" style={{background: 'var(--gradient-hero)'}}>
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />

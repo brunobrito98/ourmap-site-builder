@@ -45,8 +45,8 @@ const Features = () => {
               className="group relative bg-card rounded-2xl p-8 shadow-lg hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-2 border border-border/50"
             >
               {/* Icon */}
-              <div className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <feature.icon className="w-8 h-8 text-primary" />
+              <div className={`mb-6 w-16 h-16 rounded-xl ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5' : 'bg-gradient-to-br from-primary/20 to-primary/5'} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                <feature.icon className={`w-8 h-8 ${index === 1 ? 'text-[hsl(var(--pink))]' : 'text-primary'}`} />
               </div>
 
               {/* Feature Image */}

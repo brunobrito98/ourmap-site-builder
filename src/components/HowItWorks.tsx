@@ -46,13 +46,13 @@ const HowItWorks = () => {
                 {/* Step Card */}
                 <div className="relative bg-card rounded-2xl p-8 text-center shadow-lg border border-border/50 hover:border-primary/50 transition-all duration-300">
                   {/* Number Badge */}
-                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/80 text-primary-foreground font-bold text-lg flex items-center justify-center shadow-lg">
+                  <div className={`absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))] to-[hsl(var(--pink))]/80' : 'bg-gradient-to-br from-primary to-primary/80'} text-primary-foreground font-bold text-lg flex items-center justify-center shadow-lg`}>
                     {step.number}
                   </div>
 
                   {/* Icon */}
-                  <div className="mt-4 mb-6 w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                    <step.icon className="w-10 h-10 text-primary" />
+                  <div className={`mt-4 mb-6 w-20 h-20 mx-auto rounded-2xl ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5' : 'bg-gradient-to-br from-primary/20 to-primary/5'} flex items-center justify-center`}>
+                    <step.icon className={`w-10 h-10 ${index === 1 ? 'text-[hsl(var(--pink))]' : 'text-primary'}`} />
                   </div>
 
                   {/* Content */}

@@ -29,6 +29,9 @@ All colors MUST be HSL.
 
     --accent: 25 88% 58%;
     --accent-foreground: 0 0% 100%;
+    
+    --pink: 340 85% 60%;
+    --pink-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -39,11 +42,13 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    --gradient-hero: linear-gradient(135deg, hsl(20, 90%, 55%), hsl(28, 88%, 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(20, 90%, 55%), hsl(340, 85%, 60%));
     --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(20, 90%, 98%));
+    --gradient-pink-orange: linear-gradient(135deg, hsl(340, 85%, 60%), hsl(20, 90%, 55%));
     
     --shadow-elegant: 0 10px 30px -10px hsl(20 90% 55% / 0.3);
     --shadow-glow: 0 0 40px hsl(20 90% 65% / 0.4);
+    --shadow-pink: 0 10px 30px -10px hsl(340 85% 60% / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -77,6 +82,9 @@ All colors MUST be HSL.
 
     --accent: 25 88% 58%;
     --accent-foreground: 0 0% 100%;
+    
+    --pink: 340 85% 60%;
+    --pink-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -85,11 +93,13 @@ All colors MUST be HSL.
     --input: 240 3.7% 15.9%;
     --ring: 20 90% 55%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(20, 90%, 55%), hsl(28, 88%, 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(20, 90%, 55%), hsl(340, 85%, 60%));
     --gradient-subtle: linear-gradient(180deg, hsl(240, 10%, 3.9%), hsl(20, 90%, 10%));
+    --gradient-pink-orange: linear-gradient(135deg, hsl(340, 85%, 60%), hsl(20, 90%, 55%));
     
     --shadow-elegant: 0 10px 30px -10px hsl(20 90% 55% / 0.4);
     --shadow-glow: 0 0 40px hsl(20 90% 65% / 0.5);
+    --shadow-pink: 0 10px 30px -10px hsl(340 85% 60% / 0.3);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

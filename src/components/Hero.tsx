@@ -35,7 +35,7 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
             Descubra Eventos
-            <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="block mt-2 bg-clip-text text-transparent" style={{backgroundImage: 'var(--gradient-hero)'}}>
               Que Você Vai Amar
             </span>
           </h1>
@@ -73,7 +73,7 @@ const Hero = () => {
               <div className="text-sm text-muted-foreground">Eventos Criados</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">50+</div>
+              <div className="text-3xl md:text-4xl font-bold" style={{color: 'hsl(var(--pink))'}}>50+</div>
               <div className="text-sm text-muted-foreground">Cidades</div>
             </div>
             <div className="space-y-2">
