@@ -10,7 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="flex items-center justify-center md:justify-start">
-            <Logo size="sm" />
+            <div className="scale-110">
+              <Logo size="sm" />
+            </div>
           </div>
 
           {/* Product */}
