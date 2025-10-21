@@ -8,13 +8,11 @@ export default defineConfig(({ mode }) => ({
     host: "0.0.0.0",
     port: 5000,
     strictPort: false,
-    allowedHosts: [
-      '.replit.dev',
-      '.repl.co',
-      'localhost',
-    ],
+    allowedHosts: true,
     hmr: {
-      clientPort: 5000,
+      protocol: 'wss',
+      host: process.env.REPLIT_DEV_DOMAIN,
+      clientPort: 443,
     },
   },
   plugins: [
