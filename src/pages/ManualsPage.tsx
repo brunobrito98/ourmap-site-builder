@@ -1,12 +1,16 @@
 import { Book, Users, Calendar, Bell, CreditCard, TrendingUp, Repeat, MessageCircle, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 import Footer from "@/components/Footer";
 import Logo from "@/components/Logo";
 
 const ManualsPage = () => {
+  const navigate = useNavigate();
+  
   const manuals = [
     {
+      id: "manual-usuario",
       icon: Book,
       title: "Manual do Usuário",
       description: "Guia completo sobre como usar todas as funcionalidades da plataforma",
@@ -19,6 +23,7 @@ const ManualsPage = () => {
       color: "from-orange-500 to-red-500"
     },
     {
+      id: "eventos-pagos",
       icon: CreditCard,
       title: "Eventos Pagos",
       description: "Como criar e gerenciar eventos com venda de ingressos",
@@ -31,6 +36,7 @@ const ManualsPage = () => {
       color: "from-red-500 to-pink-500"
     },
     {
+      id: "eventos-recorrentes",
       icon: Repeat,
       title: "Eventos Recorrentes",
       description: "Crie séries de eventos que acontecem regularmente",
@@ -43,6 +49,7 @@ const ManualsPage = () => {
       color: "from-pink-500 to-purple-500"
     },
     {
+      id: "sistema-boost",
       icon: TrendingUp,
       title: "Sistema de Boost",
       description: "Promova seus eventos e alcance mais pessoas",
@@ -55,6 +62,7 @@ const ManualsPage = () => {
       color: "from-purple-500 to-orange-500"
     },
     {
+      id: "grupos-comunidades",
       icon: Users,
       title: "Grupos e Comunidades",
       description: "Participe ou crie grupos temáticos",
@@ -67,6 +75,7 @@ const ManualsPage = () => {
       color: "from-orange-500 to-pink-500"
     },
     {
+      id: "notificacoes",
       icon: Bell,
       title: "Notificações",
       description: "Configure como e quando receber notificações",
@@ -79,6 +88,7 @@ const ManualsPage = () => {
       color: "from-red-500 to-purple-500"
     },
     {
+      id: "programa-referencia",
       icon: MessageCircle,
       title: "Programa de Referência",
       description: "Ganhe créditos indicando amigos",
@@ -161,7 +171,7 @@ const ManualsPage = () => {
                   <Button 
                     variant="outline" 
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                    onClick={() => window.open('https://docs.ourmap.com.br', '_blank')}
+                    onClick={() => navigate(`/manuais/${manual.id}`)}
                     data-testid={`button-read-manual-${index}`}
                   >
                     Ler Manual
