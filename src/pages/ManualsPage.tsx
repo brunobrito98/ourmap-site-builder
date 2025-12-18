@@ -1,4 +1,4 @@
-import { Book, Users, Calendar, Bell, CreditCard, TrendingUp, Repeat, MessageCircle, Shield } from "lucide-react";
+import { Book, Users, Calendar, Bell, CreditCard, TrendingUp, Repeat, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
@@ -56,7 +56,6 @@ const ManualsPage = () => {
       topics: [
         "Como funciona o boost",
         "Planos disponíveis (Prata, Ouro, Diamante)",
-        "Usar créditos de referência",
         "Melhores práticas"
       ],
       color: "from-purple-500 to-orange-500"
@@ -86,19 +85,6 @@ const ManualsPage = () => {
         "Gerenciar centro de notificações"
       ],
       color: "from-red-500 to-purple-500"
-    },
-    {
-      id: "programa-referencia",
-      icon: MessageCircle,
-      title: "Programa de Referência",
-      description: "Ganhe créditos indicando amigos",
-      topics: [
-        "Como funciona",
-        "Compartilhar seu link",
-        "Usar créditos em boosts",
-        "Estratégias para ganhar mais"
-      ],
-      color: "from-pink-500 to-orange-500"
     }
   ];
 

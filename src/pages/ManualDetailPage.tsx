@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Book, Users, Bell, CreditCard, TrendingUp, Repeat, MessageCircle, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, Book, Users, Bell, CreditCard, TrendingUp, Repeat, CheckCircle2 } from "lucide-react";
 import Footer from "@/components/Footer";
 import Logo from "@/components/Logo";
 
@@ -170,17 +170,7 @@ const ManualDetailPage = () => {
             "Plano Prata: R$ 29,90 / $9.90 - 20 'subidas' ao longo de 7 dias, Destaque moderado, Ideal para eventos locais",
             "Plano Ouro: R$ 69,90 / $19.90 - 50 'subidas' ao longo de 14 dias + 10 aparições no topo, Destaque forte, Ideal para eventos médios",
             "Plano Diamante: R$ 149,90 / $39.90 - 100 'subidas' ao longo de 30 dias + 30 aparições no topo, Máximo destaque, Ideal para grandes eventos",
-            "Como Funciona: Compre o Plano (escolha e pague via Stripe), Distribuição Automática (sistema 'sobe' seu evento automaticamente ao longo do período), Maior Alcance (seu evento aparece para muito mais pessoas), Acompanhe (veja estatísticas de visualizações e confirmações)",
-            "Pagar com Créditos: Use saldo de créditos do programa de referência para pagar boosts!"
-          ]
-        },
-        {
-          title: "Programa de Referência",
-          content: "Ganhe créditos indicando amigos para a plataforma.",
-          steps: [
-            "Como Funciona: Compartilhe seu Link Único, Amigos se Cadastram, Você Ganha R$ 10,00 de Crédito, Use em Boosts de Eventos",
-            "Onde Encontrar seu Link: Vá para Perfil, Clique em Programa de Referência, Copie seu link único, Compartilhe com amigos!",
-            "Seus Créditos: Visualize saldo atual, Histórico de transações, Use para pagar boosts, Sem validade!"
+            "Como Funciona: Compre o Plano (escolha e pague via Stripe), Distribuição Automática (sistema 'sobe' seu evento automaticamente ao longo do período), Maior Alcance (seu evento aparece para muito mais pessoas), Acompanhe (veja estatísticas de visualizações e confirmações)"
           ]
         },
         {
@@ -419,22 +409,6 @@ const ManualDetailPage = () => {
             "Maior Alcance: Seu evento aparece para muito mais pessoas",
             "Acompanhe: Veja estatísticas de visualizações e confirmações"
           ]
-        },
-        {
-          title: "Pagar com Créditos",
-          content: "Use saldo de créditos do programa de referência para pagar boosts.",
-          steps: [
-            "Na tela de escolha do plano, veja seu saldo disponível",
-            "Marque 'Usar Créditos'",
-            "Sistema calcula automaticamente",
-            "Saldo total = boost grátis!",
-            "Saldo parcial = paga só diferença",
-            "Créditos são deduzidos automaticamente"
-          ],
-          tips: [
-            "Acumule créditos indicando amigos",
-            "Cada indicação = R$ 10 em créditos"
-          ]
         }
       ]
     },
@@ -528,44 +502,6 @@ const ManualDetailPage = () => {
           tips: [
             "Deixe lembretes de eventos ativos para não perder nada",
             "Configure frequência de emails para evitar sobrecarga"
-          ]
-        }
-      ]
-    },
-    "programa-referencia": {
-      icon: MessageCircle,
-      title: "Programa de Referência",
-      description: "Ganhe créditos indicando amigos",
-      color: "from-pink-500 to-orange-500",
-      sections: [
-        {
-          title: "Como Funciona",
-          content: "Ganhe R$ 10,00 em créditos para cada amigo que se cadastrar.",
-          steps: [
-            "Compartilhe seu Link Único",
-            "Amigos se Cadastram",
-            "Você Ganha R$ 10,00 de Crédito",
-            "Use em Boosts de Eventos"
-          ]
-        },
-        {
-          title: "Onde Encontrar seu Link",
-          content: "Acesse e compartilhe seu link de referência.",
-          steps: [
-            "Vá para Perfil",
-            "Clique em Programa de Referência",
-            "Copie seu link único",
-            "Compartilhe com amigos"
-          ]
-        },
-        {
-          title: "Seus Créditos",
-          content: "Gerencie e use seus créditos acumulados.",
-          steps: [
-            "Visualize saldo atual",
-            "Veja histórico de transações",
-            "Use para pagar boosts de eventos",
-            "Créditos sem validade!"
           ]
         }
       ]

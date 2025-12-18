@@ -329,7 +329,7 @@ const SupportPage = () => {
               { tip: "Siga organizadores favoritos para não perder novos eventos", icon: Users },
               { tip: "Use filtros para encontrar eventos do seu interesse rapidamente", icon: HelpCircle },
               { tip: "Ative notificações para lembretes de eventos confirmados", icon: Bell },
-              { tip: "Compartilhe eventos com amigos e ganhe créditos de indicação", icon: ExternalLink },
+              { tip: "Compartilhe eventos com amigos", icon: ExternalLink },
               { tip: "Confira os manuais para tutoriais detalhados de cada função", icon: FileText }
             ].map((item, index) => (
               <div 

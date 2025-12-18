@@ -1,6 +1,6 @@
 import { 
   Search, Heart, PartyPopper, CreditCard, Users, MessageCircle, 
-  Bell, Star, Target, Repeat, DollarSign, TrendingUp, BarChart3,
+  Bell, Star, Target, Repeat, TrendingUp, BarChart3,
   UserCheck, Camera, Shield, Lock, MapPin, Mail, Zap, Globe,
   CheckCircle2, Sparkles
 } from "lucide-react";
@@ -46,11 +46,6 @@ const FeaturesPage = () => {
       icon: Target,
       title: "Grupos Temáticos",
       description: "Participe de comunidades organizadas por interesse e descubra eventos relevantes para você."
-    },
-    {
-      icon: DollarSign,
-      title: "Programa de Referência",
-      description: "Ganhe créditos indicando amigos. Quanto mais você compartilha, mais benefícios recebe."
     }
   ];
 
