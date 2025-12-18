@@ -383,31 +383,33 @@ const ManualDetailPage = () => {
       sections: [
         {
           title: "O que é Boost?",
-          content: "Sistema de promoção paga para destacar seu evento.",
+          content: "O Boost é uma ferramenta de promoção paga para destacar eventos. Quando ativado, o evento:",
           steps: [
-            "Aparece primeiro nas buscas",
-            "Destaque na tela inicial",
-            "Maior visibilidade",
-            "Mais participantes"
+            "📊 Aparece nas primeiras posições das buscas",
+            "🔝 Fica destacado na tela inicial",
+            "📍 Ganha visibilidade em buscas por localização",
+            "🎯 Alcança usuários com interesses relacionados"
           ]
         },
         {
           title: "Planos Disponíveis",
           content: "Escolha o plano ideal conforme tamanho e alcance do evento.",
           steps: [
-            "🥈 Prata: R$ 29,90 / $9.90 - 20 'subidas' ao longo de 7 dias, destaque moderado, ideal para eventos locais",
-            "🥇 Ouro: R$ 69,90 / $19.90 - 50 'subidas' ao longo de 14 dias + 10 aparições no topo, destaque forte, ideal para eventos médios",
-            "💎 Diamante: R$ 149,90 / $39.90 - 100 'subidas' ao longo de 30 dias + 30 aparições no topo, máximo destaque, ideal para grandes eventos"
+            "🥈 Prata: R$ 7,90 / $2.90 - 7 dias, 3 subidas. Perfeito para testar! Destaque visual simples",
+            "🥇 Ouro: R$ 14,90 / $4.90 - 15 dias, 7 subidas. O mais popular! Maior destaque, aparece nas recomendações",
+            "💎 Diamante: R$ 29,90 / $9.90 - 30 dias, 15 subidas. Destaque máximo, topo das buscas, notificações para usuários"
           ]
         },
         {
           title: "Como Funciona",
-          content: "Sistema de distribuição automática ao longo do período.",
+          content: "Entenda como o sistema opera para maximizar seus resultados.",
           steps: [
-            "Compre o Plano: Escolha e pague via Stripe",
-            "Distribuição Automática: Sistema 'sobe' seu evento automaticamente ao longo do período",
-            "Maior Alcance: Seu evento aparece para muito mais pessoas",
-            "Acompanhe: Veja estatísticas de visualizações e confirmações"
+            "Distribuição Inteligente: O sistema distribui as 'subidas' automaticamente ao longo do período do plano",
+            "Compra via Stripe: O pagamento é processado pelo Stripe",
+            "Uso de Créditos: É possível pagar usando créditos do programa de referência",
+            "Primeiro Boost Grátis: O primeiro evento do usuário pode ser impulsionado gratuitamente com o plano Prata",
+            "Upgrade: É possível fazer upgrade para planos superiores durante a vigência de um boost ativo",
+            "Cupons de Desconto: O sistema aceita cupons que podem ser aplicados na compra"
           ]
         }
       ]
