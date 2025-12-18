@@ -47,7 +47,7 @@ const SupportPage = () => {
       questions: [
         {
           question: "Como encontrar eventos próximos a mim?",
-          answer: "Na tela inicial, você verá o mapa com eventos próximos. Use os filtros para refinar por categoria, data ou distância. Ative a localização para melhores resultados."
+          answer: "Na tela inicial, você verá um feed com eventos próximos. Use os filtros para refinar por categoria, data ou distância. Ative a localização para melhores resultados."
         },
         {
           question: "Como criar um evento?",
@@ -116,7 +116,7 @@ const SupportPage = () => {
         },
         {
           question: "Como denunciar conteúdo impróprio?",
-          answer: "Em qualquer evento, perfil ou mensagem, toque nos três pontos (⋮) e selecione 'Denunciar'. Nossa equipe analisa todas as denúncias em até 24h."
+          answer: "Em qualquer evento, perfil ou mensagem, toque nos três pontos (⋮) e selecione 'Denunciar'. Nossa equipe analisa todas as denúncias o mais rápido possível."
         },
         {
           question: "Como bloquear um usuário?",
@@ -134,7 +134,7 @@ const SupportPage = () => {
     {
       icon: Mail,
       title: "Email",
-      description: "Resposta em até 24h",
+      description: "Resposta rápida",
       action: "suporte@ourmap.com.br",
       href: "mailto:suporte@ourmap.com.br",
       primary: true
@@ -197,7 +197,6 @@ const SupportPage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <Badge className="text-sm px-4 py-2 bg-primary/10 text-primary border-primary/20">
-              <HelpCircle className="w-4 h-4 mr-2" />
               Central de Ajuda
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground">
@@ -384,7 +383,7 @@ const SupportPage = () => {
                 </div>
                 <div className="flex items-center justify-center gap-2 text-white/80 text-sm pt-4">
                   <CheckCircle2 className="w-4 h-4" />
-                  <span>Resposta garantida em até 24 horas úteis</span>
+                  <span>Resposta rápida e eficiente</span>
                 </div>
               </div>
             </div>
