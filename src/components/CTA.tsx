@@ -40,9 +40,6 @@ const CTA = () => {
                 </Button>
               </div>
 
-              <p className="text-sm text-white/80">
-                ✨ Gratuito • 🚀 Sem cartão de crédito • 📱 Acesso instantâneo
-              </p>
             </div>
           </div>
         </div>

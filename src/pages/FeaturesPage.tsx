@@ -358,9 +358,6 @@ const FeaturesPage = () => {
                     <PartyPopper className="w-5 h-5" />
                   </Button>
                 </div>
-                <p className="text-sm text-white/80">
-                  ✨ Gratuito • 🚀 Sem cartão de crédito • 📱 Acesso instantâneo
-                </p>
               </div>
             </div>
           </div>

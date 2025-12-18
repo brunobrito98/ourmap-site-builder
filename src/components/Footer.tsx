@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import Logo from "@/components/Logo";
 
 const Footer = () => {
@@ -55,13 +55,6 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
               <a
                 href="#"
