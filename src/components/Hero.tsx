@@ -65,22 +65,6 @@ const Hero = () => {
               Saiba Mais
             </Button>
           </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto">
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">1000+</div>
-              <div className="text-sm text-muted-foreground">Eventos Criados</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold" style={{color: 'hsl(var(--pink))'}}>50+</div>
-              <div className="text-sm text-muted-foreground">Cidades</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">5000+</div>
-              <div className="text-sm text-muted-foreground">Usuários Ativos</div>
-            </div>
-          </div>
         </div>
       </div>
 

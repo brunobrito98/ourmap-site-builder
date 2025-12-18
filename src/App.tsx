@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import FeaturesPage from "./pages/FeaturesPage";
 import ManualsPage from "./pages/ManualsPage";
 import ManualDetailPage from "./pages/ManualDetailPage";
+import SupportPage from "./pages/SupportPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/funcionalidades" element={<FeaturesPage />} />
           <Route path="/manuais" element={<ManualsPage />} />
           <Route path="/manuais/:manualId" element={<ManualDetailPage />} />
+          <Route path="/suporte" element={<SupportPage />} />
+          <Route path="/politica-de-privacidade" element={<PrivacyPolicyPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

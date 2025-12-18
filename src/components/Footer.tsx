@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Facebook, Mail } from "lucide-react";
+import { Instagram, Twitter, Mail } from "lucide-react";
 import Logo from "@/components/Logo";
 
 const Footer = () => {
@@ -37,6 +37,11 @@ const Footer = () => {
                   Manuais
                 </a>
               </li>
+              <li>
+                <a href="/suporte" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Suporte
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -61,13 +66,6 @@ const Footer = () => {
               <a
                 href="#"
                 className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
@@ -87,7 +85,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+            <a href="/politica-de-privacidade" className="text-muted-foreground hover:text-primary transition-colors text-sm">
               Privacidade
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
