@@ -1,5 +1,5 @@
-import { 
-  Search, Heart, PartyPopper, CreditCard, Users, MessageCircle, 
+import {
+  Search, Heart, PartyPopper, CreditCard, Users, MessageCircle,
   Bell, Star, Target, Repeat, TrendingUp, BarChart3,
   UserCheck, Camera, Shield, Lock, MapPin, Mail, Zap, Globe,
   CheckCircle2, Sparkles
@@ -9,6 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { openAppStore } from "@/lib/openAppStore";
 
 const FeaturesPage = () => {
   const participantFeatures = [
@@ -161,12 +162,12 @@ const FeaturesPage = () => {
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground">
               Tudo Que Você Precisa Para
-              <span className="block mt-2 bg-clip-text text-transparent" style={{backgroundImage: 'var(--gradient-hero)'}}>
+              <span className="block mt-2 bg-clip-text text-transparent" style={{ backgroundImage: 'var(--gradient-hero)' }}>
                 Eventos Incríveis
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Uma plataforma completa para criar, descobrir e participar de eventos. 
+              Uma plataforma completa para criar, descobrir e participar de eventos.
               Conecte pessoas, construa comunidades e crie experiências inesquecíveis.
             </p>
           </div>
@@ -187,8 +188,8 @@ const FeaturesPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {participantFeatures.map((feature, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50 hover:border-primary/50"
                 data-testid={`card-participant-feature-${index}`}
               >
@@ -223,8 +224,8 @@ const FeaturesPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {organizerFeatures.map((feature, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50 hover:border-primary/50"
                 data-testid={`card-organizer-feature-${index}`}
               >
@@ -259,8 +260,8 @@ const FeaturesPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {socialFeatures.map((feature, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50 hover:border-primary/50"
                 data-testid={`card-social-feature-${index}`}
               >
@@ -295,8 +296,8 @@ const FeaturesPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {techFeatures.map((feature, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50 hover:border-primary/50"
                 data-testid={`card-tech-feature-${index}`}
               >
@@ -321,7 +322,7 @@ const FeaturesPage = () => {
       <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{background: 'var(--gradient-hero)'}}>
+            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
@@ -333,11 +334,11 @@ const FeaturesPage = () => {
                   Junte-se a milhares de pessoas que já estão descobrindo os melhores eventos da sua cidade
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                  <Button 
+                  <Button
                     size="lg"
                     variant="secondary"
                     className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
-                    onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
+                    onClick={() => openAppStore()}
                     data-testid="button-start-now"
                   >
                     Começar Agora

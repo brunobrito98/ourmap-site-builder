@@ -4,10 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useNavigate } from "react-router-dom";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { openAppStore } from "@/lib/openAppStore";
 
 const ManualsPage = () => {
   const navigate = useNavigate();
-  
+
   const manuals = [
     {
       id: "manual-usuario",
@@ -117,8 +118,8 @@ const ManualsPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {manuals.map((manual, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50 hover:border-primary/50"
                 data-testid={`card-manual-${index}`}
               >
@@ -140,8 +141,8 @@ const ManualsPage = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
                     onClick={() => navigate(`/manuais/${manual.id}`)}
                     data-testid={`button-read-manual-${index}`}
@@ -159,7 +160,7 @@ const ManualsPage = () => {
       <section className="py-20 bg-gradient-to-b from-background to-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{background: 'var(--gradient-hero)'}}>
+            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
@@ -172,7 +173,7 @@ const ManualsPage = () => {
                   Nossa equipe de suporte está pronta para ajudar você a aproveitar ao máximo a plataforma
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                  <Button 
+                  <Button
                     size="lg"
                     variant="secondary"
                     className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
@@ -181,11 +182,11 @@ const ManualsPage = () => {
                   >
                     Contatar Suporte
                   </Button>
-                  <Button 
+                  <Button
                     size="lg"
                     variant="outline"
                     className="text-lg px-8 py-6 h-auto border-white text-white hover:bg-white/20"
-                    onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
+                    onClick={() => openAppStore()}
                     data-testid="button-open-app-support"
                   >
                     Abrir App

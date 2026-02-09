@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, MapPin, Users, Calendar } from "lucide-react";
 import heroImage from "@/assets/hero-events.jpg";
+import { openAppStore } from "@/lib/openAppStore";
 
 const Hero = () => {
   return (
@@ -68,7 +69,7 @@ const Hero = () => {
               size="lg"
               variant="hero"
               className="text-lg px-10 py-7 h-auto rounded-2xl font-bold shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-glow)] hover:scale-105 transition-all duration-300"
-              onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
+              onClick={() => openAppStore()}
             >
               Abrir App
               <Sparkles className="w-5 h-5 ml-2" />

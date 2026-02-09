@@ -1,5 +1,5 @@
-import { 
-  Mail, MessageCircle, FileText, HelpCircle, 
+import {
+  Mail, MessageCircle, FileText, HelpCircle,
   ChevronDown, ExternalLink, Clock, CheckCircle2,
   Smartphone, CreditCard, Users, MapPin, Bell, Shield
 } from "lucide-react";
@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/accordion";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { openAppStore, getAppStoreUrl } from "@/lib/openAppStore";
 
 const SupportPage = () => {
   const faqCategories = [
@@ -144,7 +145,7 @@ const SupportPage = () => {
       title: "Chat no App",
       description: "Atendimento em tempo real",
       action: "Abrir App",
-      href: "https://app.ourmap.com.br",
+      href: "app-store",
       primary: false
     },
     {
@@ -178,7 +179,7 @@ const SupportPage = () => {
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-[hsl(var(--pink))]/20 rounded-full blur-3xl" />
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <Badge className="text-sm px-4 py-2 bg-primary/10 text-primary border-primary/20">
@@ -186,7 +187,7 @@ const SupportPage = () => {
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground">
               Como Podemos
-              <span className="block mt-2 bg-clip-text text-transparent" style={{backgroundImage: 'var(--gradient-hero)'}}>
+              <span className="block mt-2 bg-clip-text text-transparent" style={{ backgroundImage: 'var(--gradient-hero)' }}>
                 Ajudar Você?
               </span>
             </h1>
@@ -202,7 +203,7 @@ const SupportPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {contactOptions.map((option, index) => (
-              <Card 
+              <Card
                 key={index}
                 className={`group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50 hover:border-primary/50 ${option.primary ? 'ring-2 ring-primary/20' : ''}`}
               >
@@ -218,15 +219,24 @@ const SupportPage = () => {
                 </CardHeader>
                 <CardContent className="text-center">
                   {option.href.startsWith('mailto:') ? (
-                    <a 
+                    <a
                       href={option.href}
                       className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
                     >
                       {option.action}
                       <ExternalLink className="w-4 h-4" />
                     </a>
+                  ) : option.href === 'app-store' ? (
+                    <Button
+                      variant={option.primary ? "hero" : "outline"}
+                      className="w-full"
+                      onClick={() => openAppStore()}
+                    >
+                      {option.action}
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </Button>
                   ) : option.href.startsWith('http') ? (
-                    <Button 
+                    <Button
                       variant={option.primary ? "hero" : "outline"}
                       className="w-full"
                       onClick={() => window.open(option.href, '_blank')}
@@ -235,7 +245,7 @@ const SupportPage = () => {
                       <ExternalLink className="w-4 h-4 ml-2" />
                     </Button>
                   ) : (
-                    <Button 
+                    <Button
                       variant="outline"
                       className="w-full"
                       onClick={() => window.location.href = option.href}
@@ -317,7 +327,7 @@ const SupportPage = () => {
               { tip: "Compartilhe eventos com amigos", icon: ExternalLink },
               { tip: "Confira os manuais para tutoriais detalhados de cada função", icon: FileText }
             ].map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="flex items-start gap-4 p-4 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-colors"
               >
@@ -335,7 +345,7 @@ const SupportPage = () => {
       <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{background: 'var(--gradient-hero)'}}>
+            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
@@ -347,7 +357,7 @@ const SupportPage = () => {
                   Nossa equipe de suporte está pronta para ajudar você. Entre em contato e responderemos o mais rápido possível.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                  <Button 
+                  <Button
                     size="lg"
                     variant="secondary"
                     className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
@@ -356,7 +366,7 @@ const SupportPage = () => {
                     <Mail className="w-5 h-5 mr-2" />
                     Enviar Email
                   </Button>
-                  <Button 
+                  <Button
                     size="lg"
                     variant="outline"
                     className="text-lg px-8 py-6 h-auto border-white/30 text-white hover:bg-white/10"

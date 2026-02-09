@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, Book, Users, Bell, CreditCard, TrendingUp, Repeat, CheckCircle2 } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { openAppStore } from "@/lib/openAppStore";
 
 interface ManualContent {
   icon: any;
@@ -533,8 +534,8 @@ const ManualDetailPage = () => {
 
       <section className="py-12 bg-gradient-to-br from-primary/5 via-background to-primary/10">
         <div className="container mx-auto px-4">
-          <Button 
-            variant="ghost" 
+          <Button
+            variant="ghost"
             size="sm"
             onClick={() => navigate("/manuais")}
             data-testid="button-back"
@@ -585,7 +586,7 @@ const ManualDetailPage = () => {
                       </ol>
                     </div>
                   )}
-                  
+
                   {section.tips && (
                     <div className="space-y-3 bg-primary/5 p-6 rounded-lg border border-primary/20">
                       <h4 className="font-semibold text-foreground">💡 Dicas Importantes</h4>
@@ -609,7 +610,7 @@ const ManualDetailPage = () => {
       <section className="py-16 bg-gradient-to-b from-background to-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{background: 'var(--gradient-hero)'}}>
+            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
@@ -621,16 +622,16 @@ const ManualDetailPage = () => {
                   Coloque em prática o que aprendeu e aproveite ao máximo todas as funcionalidades do OurMap
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                  <Button 
+                  <Button
                     size="lg"
                     variant="secondary"
                     className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
-                    onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
+                    onClick={() => openAppStore()}
                     data-testid="button-open-app-cta"
                   >
                     Abrir App
                   </Button>
-                  <Button 
+                  <Button
                     size="lg"
                     variant="outline"
                     className="text-lg px-8 py-6 h-auto border-white text-white hover:bg-white/20"

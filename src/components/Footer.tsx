@@ -1,5 +1,6 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
 import Logo from "@/components/Logo";
+import { openAppStore } from "@/lib/openAppStore";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,9 +36,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://app.ourmap.com.br" className="text-muted-foreground hover:text-primary transition-colors text-base font-medium hover:translate-x-1 inline-block duration-200" target="_blank" rel="noopener noreferrer">
+                <button onClick={() => openAppStore()} className="text-muted-foreground hover:text-primary transition-colors text-base font-medium hover:translate-x-1 inline-block duration-200 cursor-pointer bg-transparent border-none p-0">
                   Baixar App
-                </a>
+                </button>
               </li>
               <li>
                 <a href="/manuais" className="text-muted-foreground hover:text-primary transition-colors text-base font-medium hover:translate-x-1 inline-block duration-200">
@@ -57,14 +58,16 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-foreground tracking-tight">Conecte-se</h3>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/app.ourmap"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 rounded-xl bg-card border border-border/50 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:scale-110 transition-all duration-300 flex items-center justify-center shadow-sm hover:shadow-lg"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="mailto:suporte@ourmap.com.br"
                 className="w-12 h-12 rounded-xl bg-card border border-border/50 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:scale-110 transition-all duration-300 flex items-center justify-center shadow-sm hover:shadow-lg"
                 aria-label="Email"
               >

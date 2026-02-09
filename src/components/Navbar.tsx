@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/components/Logo";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { openAppStore } from "@/lib/openAppStore";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,7 +74,7 @@ const Navbar = () => {
                 size="default"
                 className="rounded-full font-semibold w-full mt-2"
                 onClick={() => {
-                  window.open('https://app.ourmap.com.br', '_blank');
+                  openAppStore();
                   setIsMenuOpen(false);
                 }}
               >

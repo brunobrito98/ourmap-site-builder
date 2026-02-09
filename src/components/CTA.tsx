@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Smartphone, Star } from "lucide-react";
+import { openAppStore } from "@/lib/openAppStore";
 
 const CTA = () => {
   return (
@@ -49,7 +50,7 @@ const CTA = () => {
                   size="lg"
                   variant="secondary"
                   className="text-xl px-12 py-8 h-auto rounded-2xl font-bold bg-white text-primary hover:bg-white/95 hover:scale-105 shadow-2xl hover:shadow-white/30 transition-all duration-300"
-                  onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
+                  onClick={() => openAppStore()}
                 >
                   Começar Agora
                   <ArrowRight className="w-6 h-6 ml-2" />
