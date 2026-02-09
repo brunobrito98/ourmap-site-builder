@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Footer from "@/components/Footer";
-import Logo from "@/components/Logo";
+import Navbar from "@/components/Navbar";
 
 const FeaturesPage = () => {
   const participantFeatures = [
@@ -150,21 +150,7 @@ const FeaturesPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header com Logo */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Logo size="sm" showText={false} />
-            <Button 
-              variant="hero"
-              onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
-              data-testid="button-open-app-header"
-            >
-              Abrir App
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-primary/10">

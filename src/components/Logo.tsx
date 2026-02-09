@@ -12,7 +12,7 @@ const Logo = ({ className, showText = true, size = "md" }: LogoProps) => {
   const navigate = useNavigate();
 
   const sizes = {
-    sm: { container: "w-12 h-12", text: "text-2xl" },
+    sm: { container: "w-[50px] h-[50px]", text: "text-2xl" },
     md: { container: "w-20 h-20", text: "text-4xl" },
     lg: { container: "w-28 h-28", text: "text-5xl" },
   };
@@ -25,16 +25,16 @@ const Logo = ({ className, showText = true, size = "md" }: LogoProps) => {
 
   return (
     <div 
-      className={cn("inline-flex flex-col items-center gap-2 cursor-pointer group", className)}
+      className={cn("inline-flex flex-col items-center gap-[1px] cursor-pointer group", className)}
       onClick={handleClick}
       data-testid="logo"
     >
-      <div className="relative transition-all duration-300 group-hover:scale-110 group-active:scale-95">
+      <div className="relative transition-all duration-300 group-hover:scale-110 group-active:scale-95 pb-1">
         <img 
           src={logoImage} 
           alt="OurMap Logo" 
           className={cn(
-            "object-cover rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow duration-300",
+            "object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300",
             currentSize.container
           )}
         />

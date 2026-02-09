@@ -13,7 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Footer from "@/components/Footer";
-import Logo from "@/components/Logo";
+import Navbar from "@/components/Navbar";
 
 const SupportPage = () => {
   const faqCategories = [
@@ -170,22 +170,7 @@ const SupportPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <a href="/">
-              <Logo size="sm" showText={false} />
-            </a>
-            <Button 
-              variant="hero"
-              onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
-            >
-              Abrir App
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-[hsl(var(--pink))]/5 relative overflow-hidden">

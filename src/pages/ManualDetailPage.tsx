@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Book, Users, Bell, CreditCard, TrendingUp, Repeat, CheckCircle2 } from "lucide-react";
 import Footer from "@/components/Footer";
-import Logo from "@/components/Logo";
+import Navbar from "@/components/Navbar";
 
 interface ManualContent {
   icon: any;
@@ -529,34 +529,20 @@ const ManualDetailPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <Button 
-                variant="ghost" 
-                size="sm"
-                onClick={() => navigate("/manuais")}
-                data-testid="button-back"
-              >
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Voltar
-              </Button>
-              <Logo showText={false} size="sm" />
-            </div>
-            <Button 
-              variant="hero"
-              onClick={() => window.open('https://app.ourmap.com.br', '_blank')}
-              data-testid="button-open-app-header"
-            >
-              Abrir App
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       <section className="py-12 bg-gradient-to-br from-primary/5 via-background to-primary/10">
         <div className="container mx-auto px-4">
+          <Button 
+            variant="ghost" 
+            size="sm"
+            onClick={() => navigate("/manuais")}
+            data-testid="button-back"
+            className="mb-6"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Voltar para Manuais
+          </Button>
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${manual.color} flex items-center justify-center mx-auto shadow-lg`}>
               <Icon className="w-10 h-10 text-white" style={{ filter: 'drop-shadow(0 0 8px rgba(0,0,0,0.5))' }} />
