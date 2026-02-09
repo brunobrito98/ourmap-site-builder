@@ -8,11 +8,11 @@ const PrivacyPolicyPage = () => {
       <Navbar />
 
       {/* Content */}
-      <main className="container mx-auto px-4 py-12 max-w-4xl">
+      <main className="container mx-auto px-4 pt-24 py-12 max-w-4xl">
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tight text-foreground">Política de Privacidade - OurMap</h1>
-            <p className="text-muted-foreground">Última atualização: {new Date().toLocaleDateString('pt-BR')}</p>
+            <p className="text-muted-foreground">Última atualização: 09/02/2026</p>
           </div>
 
           <div className="prose prose-slate dark:prose-invert max-w-none space-y-8">
@@ -37,7 +37,7 @@ const PrivacyPolicyPage = () => {
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">3. Informações que Coletamos</h2>
-              
+
               <h3 className="text-xl font-medium text-foreground">3.1 Informações Fornecidas Diretamente</h3>
               <p className="text-muted-foreground">Você fornece informações ao:</p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
@@ -90,7 +90,8 @@ const PrivacyPolicyPage = () => {
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">4. Como Usamos suas Informações</h2>
-              
+              <p className="text-muted-foreground">Utilizamos suas informações para:</p>
+
               <h3 className="text-xl font-medium text-foreground">4.1 Prestação de Serviços</h3>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>Criar e gerenciar sua conta</li>
@@ -183,10 +184,10 @@ const PrivacyPolicyPage = () => {
               </ul>
 
               <h3 className="text-xl font-medium text-foreground mt-6">5.4 Transferências Corporativas</h3>
-              <p className="text-muted-foreground">Em caso de fusão, aquisição, venda de ativos ou reorganização, suas informações podem ser transferidas como parte da transação. Notificaremos sobre mudanças no controle de dados.</p>
+              <p className="text-muted-foreground leading-relaxed">Em caso de fusão, aquisição, venda de ativos ou reorganização, suas informações podem ser transferidas como parte da transação. Notificaremos sobre mudanças no controle de dados.</p>
 
               <h3 className="text-xl font-medium text-foreground mt-6">5.5 Com Seu Consentimento</h3>
-              <p className="text-muted-foreground">Compartilhamos informações para outros propósitos mediante seu consentimento explícito.</p>
+              <p className="text-muted-foreground leading-relaxed">Compartilhamos informações para outros propósitos mediante seu consentimento explícito.</p>
             </section>
 
             <section className="space-y-4">
@@ -223,7 +224,8 @@ const PrivacyPolicyPage = () => {
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">8. Segurança dos Dados</h2>
-              
+              <p className="text-muted-foreground">Implementamos medidas técnicas e organizacionais para proteger suas informações:</p>
+
               <h3 className="text-xl font-medium text-foreground">8.1 Medidas Técnicas</h3>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li><strong>Criptografia:</strong> HTTPS/TLS para transmissão de dados</li>
@@ -255,7 +257,7 @@ const PrivacyPolicyPage = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">9. Seus Direitos (LGPD)</h2>
               <p className="text-muted-foreground">Conforme a Lei Geral de Proteção de Dados (LGPD), você tem os seguintes direitos:</p>
-              
+
               <div className="grid md:grid-cols-2 gap-6 mt-4">
                 <div className="bg-card p-4 rounded-lg border border-border">
                   <h4 className="font-semibold text-foreground mb-2">9.1 Direito de Acesso</h4>
@@ -324,7 +326,7 @@ const PrivacyPolicyPage = () => {
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">10. Cookies e Tecnologias Similares</h2>
-              
+
               <h3 className="text-xl font-medium text-foreground">10.1 Tipos de Cookies Utilizados</h3>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li><strong>Cookies Essenciais:</strong> Necessários para autenticação e funcionamento do serviço (cookies de sessão)</li>
@@ -372,7 +374,7 @@ const PrivacyPolicyPage = () => {
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">13. Notificações e Comunicações</h2>
-              
+
               <h3 className="text-xl font-medium text-foreground">13.1 Tipos de Notificações</h3>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li><strong>Transacionais:</strong> Confirmação de compra, lembretes de eventos (não podem ser desativadas)</li>
@@ -407,7 +409,7 @@ const PrivacyPolicyPage = () => {
 
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">15. Pagamentos e Dados Financeiros</h2>
-              
+
               <h3 className="text-xl font-medium text-foreground">15.1 Stripe como Processador</h3>
               <p className="text-muted-foreground">Todo processamento de pagamentos é feito via Stripe:</p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
@@ -487,7 +489,7 @@ const PrivacyPolicyPage = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">19. Direitos dos Consumidores da Califórnia (CCPA/CPRA)</h2>
               <p className="text-muted-foreground">Para residentes da Califórnia, você tem direitos adicionais sob CCPA/CPRA:</p>
-              
+
               <h3 className="text-xl font-medium text-foreground mt-6">19.1 Seus Direitos CCPA/CPRA</h3>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li><strong>Direito de Saber:</strong> Categorias e itens específicos de dados coletados nos últimos 12 meses</li>
@@ -510,6 +512,25 @@ const PrivacyPolicyPage = () => {
 
               <h3 className="text-xl font-medium text-foreground mt-6">19.3 Venda e Compartilhamento de Dados</h3>
               <p className="text-muted-foreground">Não vendemos suas informações pessoais. Compartilhamos com prestadores de serviço para operação da plataforma conforme descrito nesta política.</p>
+
+              <h3 className="text-xl font-medium text-foreground mt-6">19.4 Decisões Automatizadas (ADMT)</h3>
+              <p className="text-muted-foreground">Utilizamos tecnologia de decisão automatizada para:</p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Moderação de conteúdo e filtragem de spam</li>
+                <li>Recomendação de eventos baseada em preferências</li>
+                <li>Pontuação de risco para aprovação de eventos</li>
+              </ul>
+              <p className="text-muted-foreground mt-2">
+                Você pode optar por não estar sujeito a decisões automatizadas que produzam efeitos legais ou significativos. Para contestar, entre em contato em suporte@ourmap.com.br.
+              </p>
+
+              <h3 className="text-xl font-medium text-foreground mt-6">19.5 Como Exercer seus Direitos</h3>
+              <p className="text-muted-foreground">Para exercer direitos CCPA/CPRA:</p>
+              <div className="mt-2 text-muted-foreground">
+                <p><strong>Email:</strong> suporte@ourmap.com.br</p>
+                <p><strong>Prazo de Resposta:</strong> 45 dias (extensível a 90 dias se complexo)</p>
+              </div>
+              <p className="text-muted-foreground mt-2">Podemos solicitar verificação de identidade antes de processar solicitações.</p>
             </section>
 
             <section className="space-y-4">
@@ -544,6 +565,9 @@ const PrivacyPolicyPage = () => {
                 <li>Pode excluir sua conta a qualquer momento</li>
                 <li>Transferências internacionais com salvaguardas adequadas</li>
               </ul>
+              <p className="text-muted-foreground mt-4">
+                Esta Política complementa os <a href="/termos-de-uso" className="text-primary hover:underline">Termos de Uso</a> do OurMap. Ao usar nossa plataforma, você concorda com ambos os documentos.
+              </p>
             </section>
           </div>
         </div>

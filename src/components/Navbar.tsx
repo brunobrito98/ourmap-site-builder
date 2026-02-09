@@ -12,7 +12,6 @@ const Navbar = () => {
     { name: "Funcionalidades", href: "/funcionalidades" },
     { name: "Manuais", href: "/manuais" },
     { name: "Suporte", href: "/suporte" },
-    { name: "Para Empresas", href: "/empresas" },
   ];
 
   return (
