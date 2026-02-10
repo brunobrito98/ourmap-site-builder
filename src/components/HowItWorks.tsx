@@ -23,19 +23,19 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-32 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
+    <section className="py-16 sm:py-24 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmOTc0MTYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE2YzAgMi4yMS0xLjc5IDQtNCA0cy00LTEuNzktNC00IDEuNzktNCA0LTQgNCAxLjc5IDQgNHptMCAxMGMwIDIuMjEtMS43OSA0LTQgNHMtNC0xLjc5LTQtNCAxLjc5LTQgNC00IDQgMS43OSA0IDR6bTAgMTBjMCAyLjIxLTEuNzkgNC00IDRzLTQtMS43OS00LTQgMS43OS00IDQtNCA0IDEuNzkgNCA0eiIvPjwvZz48L2c+PC9zdmc+')] opacity-40" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-4xl mx-auto mb-20 space-y-6">
+        <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-20 space-y-4 sm:space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-glass mb-4">
-            <span className="text-sm font-bold text-primary tracking-wide uppercase">Simples & Rápido</span>
+            <span className="text-xs sm:text-sm font-bold text-primary tracking-wide uppercase">Simples & Rápido</span>
           </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight tracking-tight text-balance">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight tracking-tight text-balance">
             Como Funciona
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-medium text-balance">
+          <p className="text-base sm:text-xl md:text-2xl text-muted-foreground leading-relaxed font-medium text-balance">
             Em três passos simples, você está pronto para descobrir os melhores eventos da sua cidade
           </p>
         </div>
@@ -52,22 +52,22 @@ const HowItWorks = () => {
                 )}
 
                 {/* Step Card */}
-                <div className="relative bg-card/80 backdrop-blur-glass rounded-3xl p-10 text-center shadow-lg border border-border/50 hover:border-primary/50 hover:shadow-[var(--shadow-elegant)] transition-all duration-500 hover:-translate-y-2">
+                <div className="relative bg-card/80 backdrop-blur-glass rounded-3xl p-6 sm:p-10 text-center shadow-lg border border-border/50 hover:border-primary/50 hover:shadow-[var(--shadow-elegant)] transition-all duration-500 hover:-translate-y-2">
                   {/* Number Badge */}
-                  <div className={`absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-2xl ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))] to-[hsl(var(--pink))]/80 shadow-[var(--shadow-pink)]' : index === 2 ? 'bg-gradient-to-br from-purple-500 to-purple-600 shadow-lg shadow-purple-500/30' : 'bg-gradient-to-br from-primary to-primary/80 shadow-[var(--shadow-elegant)]'} text-primary-foreground font-bold text-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 rotate-3 group-hover:rotate-0`}>
+                  <div className={`absolute -top-5 sm:-top-8 left-1/2 -translate-x-1/2 w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))] to-[hsl(var(--pink))]/80 shadow-[var(--shadow-pink)]' : index === 2 ? 'bg-gradient-to-br from-purple-500 to-purple-600 shadow-lg shadow-purple-500/30' : 'bg-gradient-to-br from-primary to-primary/80 shadow-[var(--shadow-elegant)]'} text-primary-foreground font-bold text-lg sm:text-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 rotate-3 group-hover:rotate-0`}>
                     {step.number}
                   </div>
 
                   {/* Icon */}
-                  <div className={`mt-6 mb-8 w-24 h-24 mx-auto rounded-2xl ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5' : index === 2 ? 'bg-gradient-to-br from-purple-500/20 to-purple-500/5' : 'bg-gradient-to-br from-primary/20 to-primary/5'} flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
-                    <step.icon className={`w-12 h-12 ${index === 1 ? 'text-[hsl(var(--pink))]' : index === 2 ? 'text-purple-500' : 'text-primary'}`} />
+                  <div className={`mt-4 sm:mt-6 mb-6 sm:mb-8 w-16 h-16 sm:w-24 sm:h-24 mx-auto rounded-2xl ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5' : index === 2 ? 'bg-gradient-to-br from-purple-500/20 to-purple-500/5' : 'bg-gradient-to-br from-primary/20 to-primary/5'} flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
+                    <step.icon className={`w-8 h-8 sm:w-12 sm:h-12 ${index === 1 ? 'text-[hsl(var(--pink))]' : index === 2 ? 'text-purple-500' : 'text-primary'}`} />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-3xl font-bold text-foreground mb-4 tracking-tight">
+                  <h3 className="text-xl sm:text-3xl font-bold text-foreground mb-3 sm:mb-4 tracking-tight">
                     {step.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
+                  <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
                     {step.description}
                   </p>
 

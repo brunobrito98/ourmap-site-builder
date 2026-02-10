@@ -94,7 +94,7 @@ const ManualsPage = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-primary/10">
+      <section className="pt-24 pb-12 sm:py-20 bg-gradient-to-br from-primary/5 via-background to-primary/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
@@ -103,10 +103,10 @@ const ManualsPage = () => {
                 Central de Ajuda
               </span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground">
               Manuais de Uso
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               Aprenda a usar todas as funcionalidades da plataforma com nossos guias completos e detalhados
             </p>
           </div>
@@ -114,7 +114,7 @@ const ManualsPage = () => {
       </section>
 
       {/* Manuais Grid */}
-      <section className="py-20 bg-background">
+      <section className="py-12 sm:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {manuals.map((manual, index) => (
@@ -157,19 +157,19 @@ const ManualsPage = () => {
       </section>
 
       {/* Suporte Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-secondary/20">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
+            <div className="relative rounded-2xl sm:rounded-3xl p-6 sm:p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
               <div className="relative z-10 space-y-6">
                 <Shield className="w-16 h-16 text-white mx-auto" />
-                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white">
                   Precisa de Ajuda?
                 </h2>
-                <p className="text-xl text-white/90 max-w-2xl mx-auto">
+                <p className="text-base sm:text-xl text-white/90 max-w-2xl mx-auto">
                   Nossa equipe de suporte está pronta para ajudar você a aproveitar ao máximo a plataforma
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <span
-              className="text-5xl font-bold bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent pb-1"
+              className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent pb-1"
               style={{ fontFamily: "'Pacifico', cursive", lineHeight: "1.5" }}
             >
               OurMap
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
 
           {/* Product */}
-          <div className="space-y-5">
+          <div className="space-y-5 text-center md:text-left">
             <h3 className="text-xl font-bold text-foreground tracking-tight">Produto</h3>
             <ul className="space-y-3">
               <li>
@@ -54,9 +54,9 @@ const Footer = () => {
           </div>
 
           {/* Connect */}
-          <div className="space-y-5">
+          <div className="space-y-5 text-center md:text-left">
             <h3 className="text-xl font-bold text-foreground tracking-tight">Conecte-se</h3>
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center md:justify-start">
               <a
                 href="https://www.instagram.com/app.ourmap"
                 target="_blank"

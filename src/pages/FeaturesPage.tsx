@@ -154,19 +154,19 @@ const FeaturesPage = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-primary/10">
+      <section className="pt-24 pb-12 sm:py-20 bg-gradient-to-br from-primary/5 via-background to-primary/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <Badge className="text-sm px-4 py-2 bg-primary/10 text-primary border-primary/20" data-testid="badge-features">
               Funcionalidades Completas
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground">
               Tudo Que Você Precisa Para
               <span className="block mt-2 bg-clip-text text-transparent" style={{ backgroundImage: 'var(--gradient-hero)' }}>
                 Eventos Incríveis
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               Uma plataforma completa para criar, descobrir e participar de eventos.
               Conecte pessoas, construa comunidades e crie experiências inesquecíveis.
             </p>
@@ -175,10 +175,10 @@ const FeaturesPage = () => {
       </section>
 
       {/* Para Participantes */}
-      <section className="py-20 bg-background" id="participantes">
+      <section className="py-12 sm:py-20 bg-background" id="participantes">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16 space-y-4">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-foreground">
               Para Participantes
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -211,10 +211,10 @@ const FeaturesPage = () => {
       </section>
 
       {/* Para Organizadores */}
-      <section className="py-20 bg-gradient-to-b from-background to-secondary/20" id="organizadores">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-secondary/20" id="organizadores">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16 space-y-4">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-foreground">
               Para Organizadores
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -247,10 +247,10 @@ const FeaturesPage = () => {
       </section>
 
       {/* Recursos Sociais */}
-      <section className="py-20 bg-background" id="social">
+      <section className="py-12 sm:py-20 bg-background" id="social">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16 space-y-4">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-foreground">
               Recursos Sociais
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -283,10 +283,10 @@ const FeaturesPage = () => {
       </section>
 
       {/* Tecnologia e Segurança */}
-      <section className="py-20 bg-gradient-to-b from-background to-secondary/20" id="seguranca">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-secondary/20" id="seguranca">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16 space-y-4">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-foreground">
               Tecnologia e Segurança
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -319,18 +319,18 @@ const FeaturesPage = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
+      <section className="py-12 sm:py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
+            <div className="relative rounded-2xl sm:rounded-3xl p-6 sm:p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
               <div className="relative z-10 space-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white">
                   Pronto Para Começar?
                 </h2>
-                <p className="text-xl text-white/90 max-w-2xl mx-auto">
+                <p className="text-base sm:text-xl text-white/90 max-w-2xl mx-auto">
                   Junte-se a milhares de pessoas que já estão descobrindo os melhores eventos da sua cidade
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
