@@ -25,17 +25,6 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
-<<<<<<< HEAD
-
-=======
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-glass animate-slide-up shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300" style={{ animationDelay: '0.1s' }}>
-            <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
-            <span className="text-xs sm:text-sm font-semibold text-foreground tracking-wide">
-              O mapa de eventos da sua cidade
-            </span>
-          </div>
->>>>>>> 51422c1ff013578d1fc21587b466cc8c29e0675e
 
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[1.1] tracking-tight animate-slide-up text-balance" style={{ animationDelay: '0.2s' }}>
@@ -51,25 +40,6 @@ const Hero = () => {
             workshops e muito mais perto de você.
           </p>
 
-<<<<<<< HEAD
-
-=======
-          {/* Stats */}
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-6 md:gap-8 py-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <div className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-card/50 backdrop-blur-glass border border-border/50 hover:border-primary/30 transition-colors">
-              <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-              <span className="text-xs sm:text-sm font-semibold">Eventos Próximos</span>
-            </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-card/50 backdrop-blur-glass border border-border/50 hover:border-pink-500/30 transition-colors">
-              <Users className="w-4 h-4 sm:w-5 sm:h-5 text-pink-500" />
-              <span className="text-xs sm:text-sm font-semibold">Comunidade Ativa</span>
-            </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-card/50 backdrop-blur-glass border border-border/50 hover:border-purple-500/30 transition-colors">
-              <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-purple-500" />
-              <span className="text-xs sm:text-sm font-semibold">Fácil de Criar</span>
-            </div>
-          </div>
->>>>>>> 51422c1ff013578d1fc21587b466cc8c29e0675e
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-6 animate-slide-up" style={{ animationDelay: '0.5s' }}>
