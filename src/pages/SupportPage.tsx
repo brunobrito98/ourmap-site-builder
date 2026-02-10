@@ -174,7 +174,7 @@ const SupportPage = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-[hsl(var(--pink))]/5 relative overflow-hidden">
+      <section className="pt-24 pb-12 sm:py-20 bg-gradient-to-br from-primary/5 via-background to-[hsl(var(--pink))]/5 relative overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-[hsl(var(--pink))]/20 rounded-full blur-3xl" />
@@ -185,13 +185,13 @@ const SupportPage = () => {
             <Badge className="text-sm px-4 py-2 bg-primary/10 text-primary border-primary/20">
               Central de Ajuda
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground">
               Como Podemos
               <span className="block mt-2 bg-clip-text text-transparent" style={{ backgroundImage: 'var(--gradient-hero)' }}>
                 Ajudar Você?
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               Encontre respostas para suas dúvidas, acesse nossos manuais ou entre em contato com nossa equipe de suporte.
             </p>
           </div>
@@ -261,10 +261,10 @@ const SupportPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-secondary/20">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-foreground">
               Perguntas Frequentes
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -282,7 +282,7 @@ const SupportPage = () => {
                       <div className={`w-12 h-12 rounded-xl ${colorClasses.bg} flex items-center justify-center`}>
                         <category.icon className={`w-6 h-6 ${colorClasses.text}`} />
                       </div>
-                      <CardTitle className="text-2xl">{category.category}</CardTitle>
+                      <CardTitle className="text-xl sm:text-2xl">{category.category}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="pt-4">
@@ -307,10 +307,10 @@ const SupportPage = () => {
       </section>
 
       {/* Dicas Rápidas */}
-      <section className="py-20 bg-background">
+      <section className="py-12 sm:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-foreground">
               Dicas Rápidas
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -342,18 +342,18 @@ const SupportPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
+      <section className="py-12 sm:py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
+            <div className="relative rounded-2xl sm:rounded-3xl p-6 sm:p-12 md:p-16 text-center overflow-hidden shadow-2xl" style={{ background: 'var(--gradient-hero)' }}>
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
               <div className="relative z-10 space-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white">
                   Ainda Precisa de Ajuda?
                 </h2>
-                <p className="text-xl text-white/90 max-w-2xl mx-auto">
+                <p className="text-base sm:text-xl text-white/90 max-w-2xl mx-auto">
                   Nossa equipe de suporte está pronta para ajudar você. Entre em contato e responderemos o mais rápido possível.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
