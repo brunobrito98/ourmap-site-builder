@@ -1,7 +1,7 @@
 import { MapPin, Users, Calendar } from "lucide-react";
-import discoverImage from "@/assets/feature-discover.png";
-import connectImage from "@/assets/feature-connect.png";
-import organizeImage from "@/assets/feature-organize.png";
+import discoverImage from "@/assets/1.png";
+import connectImage from "@/assets/2.png";
+import organizeImage from "@/assets/3.png";
 
 const features = [
   {
@@ -21,6 +21,33 @@ const features = [
     image: organizeImage,
     title: "Organize & Crie",
     description: "Crie seus próprios eventos em minutos e compartilhe com a comunidade. Seja você o anfitrião da próxima experiência inesquecível.",
+  },
+];
+
+const featureStyles = [
+  {
+    iconBg: "bg-gradient-to-br from-primary/20 to-primary/5 shadow-[var(--shadow-elegant)]",
+    iconColor: "text-primary",
+    previewBg: "from-primary/15 via-orange-100/70 to-background",
+    glowBg: "bg-primary/10",
+    accentGradient: "from-primary/20",
+    screenBorder: "border-primary/15",
+  },
+  {
+    iconBg: "bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5 shadow-[var(--shadow-pink)]",
+    iconColor: "text-[hsl(var(--pink))]",
+    previewBg: "from-[hsl(var(--pink))]/15 via-rose-50 to-background",
+    glowBg: "bg-[hsl(var(--pink))]/10",
+    accentGradient: "from-[hsl(var(--pink))]/20",
+    screenBorder: "border-[hsl(var(--pink))]/15",
+  },
+  {
+    iconBg: "bg-gradient-to-br from-purple-500/20 to-purple-500/5",
+    iconColor: "text-purple-500",
+    previewBg: "from-purple-500/15 via-fuchsia-50 to-background",
+    glowBg: "bg-purple-500/10",
+    accentGradient: "from-purple-500/20",
+    screenBorder: "border-purple-500/15",
   },
 ];
 
@@ -46,38 +73,46 @@ const Features = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group relative bg-card/80 backdrop-blur-glass rounded-3xl p-6 sm:p-8 lg:p-10 shadow-lg hover:shadow-[var(--shadow-elegant)] transition-all duration-500 hover:-translate-y-3 border border-border/50 hover:border-primary/30"
-            >
-              {/* Icon */}
-              <div className={`mb-6 sm:mb-8 w-14 h-14 sm:w-20 sm:h-20 rounded-2xl ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20 to-[hsl(var(--pink))]/5 shadow-[var(--shadow-pink)]' : index === 2 ? 'bg-gradient-to-br from-purple-500/20 to-purple-500/5' : 'bg-gradient-to-br from-primary/20 to-primary/5 shadow-[var(--shadow-elegant)]'} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
-                <feature.icon className={`w-7 h-7 sm:w-10 sm:h-10 ${index === 1 ? 'text-[hsl(var(--pink))]' : index === 2 ? 'text-purple-500' : 'text-primary'}`} />
+          {features.map((feature, index) => {
+            const style = featureStyles[index];
+
+            return (
+              <div
+                key={index}
+                className="group relative bg-card/80 backdrop-blur-glass rounded-3xl p-6 sm:p-8 lg:p-10 shadow-lg hover:shadow-[var(--shadow-elegant)] transition-all duration-500 hover:-translate-y-3 border border-border/50 hover:border-primary/30"
+              >
+                <div className={`mb-6 sm:mb-8 w-14 h-14 sm:w-20 sm:h-20 rounded-2xl ${style.iconBg} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                  <feature.icon className={`w-7 h-7 sm:w-10 sm:h-10 ${style.iconColor}`} />
+                </div>
+
+                <div className={`mb-6 sm:mb-8 relative overflow-hidden rounded-[2rem] border border-white/60 bg-gradient-to-br ${style.previewBg} px-4 pt-5 sm:px-6 sm:pt-7 shadow-inner`}>
+                  <div className={`pointer-events-none absolute -right-8 top-8 h-28 w-28 rounded-full blur-3xl ${style.glowBg}`} />
+                  <div className="pointer-events-none absolute inset-x-6 top-0 h-16 rounded-b-[2rem] bg-white/30 blur-2xl" />
+
+                  <div className={`relative mx-auto w-[78%] sm:w-[74%] rounded-[2.25rem] border ${style.screenBorder} bg-slate-950 p-2 shadow-[0_30px_60px_-25px_rgba(15,23,42,0.55)] transition-transform duration-500 group-hover:-translate-y-1 group-hover:scale-[1.03]`}>
+                    <div className="mx-auto mb-2 h-1.5 w-20 rounded-full bg-white/12" />
+                    <div className="overflow-hidden rounded-[1.7rem] bg-white">
+                      <img
+                        src={feature.image}
+                        alt={`Preview do app em ${feature.title}`}
+                        className="h-[24rem] w-full object-cover object-top sm:h-[27rem]"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <h3 className="text-xl sm:text-3xl font-bold text-foreground mb-3 sm:mb-4 tracking-tight">
+                  {feature.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                  {feature.description}
+                </p>
+
+                <div className={`absolute -top-px -right-px w-32 h-32 bg-gradient-to-br ${style.accentGradient} to-transparent rounded-tr-3xl rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+                <div className="absolute -bottom-1 -left-1 w-24 h-24 bg-gradient-to-tr from-primary/5 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-
-              {/* Feature Image */}
-              <div className="mb-6 sm:mb-8 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10 p-4 sm:p-6 group-hover:scale-105 transition-transform duration-500">
-                <img
-                  src={feature.image}
-                  alt={`Ilustração de ${feature.title}`}
-                  className="w-full h-48 object-contain drop-shadow-lg"
-                />
-              </div>
-
-              {/* Content */}
-              <h3 className="text-xl sm:text-3xl font-bold text-foreground mb-3 sm:mb-4 tracking-tight">
-                {feature.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                {feature.description}
-              </p>
-
-              {/* Decorative Elements */}
-              <div className={`absolute -top-px -right-px w-32 h-32 ${index === 1 ? 'bg-gradient-to-br from-[hsl(var(--pink))]/20' : index === 2 ? 'bg-gradient-to-br from-purple-500/20' : 'bg-gradient-to-br from-primary/20'} to-transparent rounded-tr-3xl rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-              <div className="absolute -bottom-1 -left-1 w-24 h-24 bg-gradient-to-tr from-primary/5 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
