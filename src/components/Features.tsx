@@ -85,11 +85,11 @@ const Features = () => {
                   <feature.icon className={`w-7 h-7 sm:w-10 sm:h-10 ${style.iconColor}`} />
                 </div>
 
-                <div className={`mb-6 sm:mb-8 relative overflow-hidden rounded-[2rem] border border-white/60 bg-gradient-to-br ${style.previewBg} px-4 pt-5 sm:px-6 sm:pt-7 shadow-inner`}>
+                <div className={`mb-6 sm:mb-8 relative overflow-hidden rounded-[2rem] border border-white/60 bg-gradient-to-br ${style.previewBg} px-4 pt-5 pb-0 sm:px-6 sm:pt-7 sm:pb-0 shadow-inner`}>
                   <div className={`pointer-events-none absolute -right-8 top-8 h-28 w-28 rounded-full blur-3xl ${style.glowBg}`} />
                   <div className="pointer-events-none absolute inset-x-6 top-0 h-16 rounded-b-[2rem] bg-white/30 blur-2xl" />
 
-                  <div className={`relative mx-auto w-[78%] sm:w-[74%] rounded-[2.25rem] border ${style.screenBorder} bg-slate-950 p-2 shadow-[0_30px_60px_-25px_rgba(15,23,42,0.55)] transition-transform duration-500 group-hover:-translate-y-1 group-hover:scale-[1.03]`}>
+                  <div className={`relative mx-auto mb-[-2.75rem] sm:mb-[-3.5rem] w-[78%] sm:w-[74%] rounded-[2.25rem] border ${style.screenBorder} bg-slate-950 p-2 shadow-[0_30px_60px_-25px_rgba(15,23,42,0.55)] transition-transform duration-500 group-hover:-translate-y-1 group-hover:scale-[1.03]`}>
                     <div className="mx-auto mb-2 h-1.5 w-20 rounded-full bg-white/12" />
                     <div className="overflow-hidden rounded-[1.7rem] bg-white">
                       <img
